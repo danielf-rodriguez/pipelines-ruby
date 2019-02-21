@@ -11,10 +11,16 @@ steps:
   inputs:
     versionSpec: '>= 2.5'
 
-- script: |
-    gem install bundler
-    bundle install --path vendor/cache --retry=3 --jobs=4
-  displayName: 'bundle install'
+- script: gem install bundler
+  displayName: 'gem install bundler'
+
+- script: bundle install --retry=3 --jobs=4
+  displayName: 'bundle install'  
+
+#- script: |
+#    gem install bundler
+#    bundle install --retry=3 --jobs=4
+#  displayName: 'bundle install'
 
 - script: gem list
   displayName: 'gem list'
