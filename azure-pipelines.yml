@@ -11,7 +11,7 @@ steps:
   inputs:
     versionSpec: '>= 2.5'
 
-- script: dir C:\\SeleniumWebDrivers\\ChromeDriver
+- script: dir C:\SeleniumWebDrivers\ChromeDriver
   displayName: 'dir ChromeDriver'
 
 - script: gem install bundler
