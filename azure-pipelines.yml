@@ -11,6 +11,9 @@ steps:
   inputs:
     versionSpec: '>= 2.5'
 
+- script: gem install  
+  displayName: 'gem install'
+
 - script: |
     gem install bundler
     bundle install --path vendor/cache --retry=3 --jobs=4
