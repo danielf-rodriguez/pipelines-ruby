@@ -16,6 +16,9 @@ steps:
     bundle install --path vendor/cache --retry=3 --jobs=4
   displayName: 'bundle install'
 
+- script: gem list
+  displayName: 'gem list'
+
 - script: bundle exec rake
   displayName: 'bundle exec rake'
 
